@@ -1,0 +1,342 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.wordWrap": "on",
+    // "editor.fontFamily": "ProggyDotted",
+    // "editor.fontFamily": "sudo",
+    // "editor.fontFamily": "hack",
+    // "editor.fontFamily": "FiraCode",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 18,
+    "chat.editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.insertSpaces": true,
+    // "editor.fontWeight": "700",
+    "editor.tabSize": 2,
+    "editor.minimap.maxColumn": 100,
+    "editor.formatOnPaste": true,
+    "workbench.editorAssociations": {
+        "*.rb": "default",
+        "*.xlsx": "default"
+    },
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh",
+            "args": []
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop",
+        "editor.formatOnSave": true
+    },
+    "ruby.rubocop.executePath": "/home/despin/.asdf/shims/",
+    "ruby.format": "none",
+    "codeium.enableSearch": true,
+    "codeium.enableConfig": {
+        "*": false
+    },
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-f>": false
+    },
+    "rubyLsp.rubyVersionManager": "rbenv",
+    "window.zoomLevel": -0.5,
+    "background.fullscreen": {
+        "images": [
+            "https://wallpapers.com/images/hd/moon-and-earth-pc-xq7ly7m0ab2z7x2p.webp"
+            //ai generated /\
+            // "https://images.pexels.com/photos/2499790/pexels-photo-2499790.jpeg",
+            // "https://images.pexels.com/photos/2371892/pexels-photo-2371892.jpeg?auto=compress", // natureza
+            // "https://wallpapers.com/images/hd/digital-space-universe-1avz5fuonunrilao.webp" // universo
+            // "https://wallpapers.com/images/hd/moon-and-earth-pc-xq7ly7m0ab2z7x2p.webp"
+            // "https://c0.wallpaperflare.com/preview/344/825/243/fire-cabin-evening-campfire.jpg"
+            // "https://c4.wallpaperflare.com/wallpaper/456/225/316/lake-cabin-reflection-mountains-wallpaper-preview.jpg"
+            // "https://c4.wallpaperflare.com/wallpaper/948/147/675/dog-animals-siberian-husky-water-wallpaper-preview.jpg"
+        ], // urls of your images
+        "opacity": 0.9, // 0.85 ~ 0.95 recommended
+        "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+        "position": "center", // alias to `background-position`, default `center`
+        "interval": 0 // seconds of interval for carousel, default `0` to disabled.
+    },
+    "editor.minimap.enabled": false, // removes minimap
+    "editor.renderWhitespace": "none", // removes indent guides
+    "editor.renderLineHighlight": "none", // removes line highlight
+    "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+    "editor.hideCursorInOverviewRuler": false, // hides cursor mark in the overview ruler
+    "editor.folding": false, // removes the folding feature
+    "editor.occurrencesHighlight": "off", // removes highlights occurrences (still works when you select a word)
+    "editor.matchBrackets": "never", // removes the highlight of matching brackets (I use Subtle Match Brackets extension for this)
+    "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
+    "explorer.openEditors.visible": 1, // removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
+    // "workbench.activityBar.visible": false, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+    "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+    "indenticator.color.dark": "rgba(255,255,255,.1)", // adds a subtle indent guide (needs Indenticator extension)
+    "editor.guides.indentation": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#0000", // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+        "editor.lineHighlightBackground": "#00000011", // Semi-transparent black
+        "editor.lineHighlightBorder": "#FFB3C133" // Faint pink border
+    },
+    "workbench.colorTheme": "Ayu Mirage",
+    "chat.commandCenter.enabled": false,
+    "workbench.editor.limit.enabled": true,
+    "editor.tokenColorCustomizations": {
+        "[Ayu Mirage]": {
+            "textMateRules": [
+                {
+                    "name": "Ruby Variables",
+                    "scope": [
+                        "variable.other.ruby",
+                        "variable.other.readwrite.instance.ruby"
+                    ],
+                    "settings": {
+                        "foreground": "#FFCC80",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Ruby Strings",
+                    "scope": [
+                        "string.quoted.single.ruby",
+                        "string.quoted.double.ruby"
+                    ],
+                    "settings": {
+                        "foreground": "#B3E5FC",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Ruby Symbols",
+                    "scope": "constant.other.symbol.ruby",
+                    "settings": {
+                        "foreground": "#C5E1A5",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Rails Keywords",
+                    "scope": [
+                        "keyword.control.ruby",
+                        "keyword.other.special-method.ruby"
+                    ],
+                    "settings": {
+                        "foreground": "#FFE082",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Ruby Comments",
+                    "scope": "comment.line.number-sign.ruby",
+                    "settings": {
+                        "foreground": "#D1C4E9",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Ruby Constants",
+                    "scope": "constant.language.ruby",
+                    "settings": {
+                        "foreground": "#FFAB91",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Rails ERB Tags",
+                    "scope": "text.html.ruby meta.embedded.line.erb",
+                    "settings": {
+                        "foreground": "#FFCCBC",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Numbers",
+                    "scope": "constant.numeric.ruby",
+                    "settings": {
+                        "foreground": "#B2EBF2",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Methods",
+                    "scope": "entity.name.function.ruby",
+                    "settings": {
+                        "foreground": "#C8E6C9",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Class Names",
+                    "scope": "entity.name.type.class.ruby",
+                    "settings": {
+                        "foreground": "#FFCC80",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Function Parameters",
+                    "scope": "variable.parameter.function.ruby",
+                    "settings": {
+                        "foreground": "#FFCCBC",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Block Keywords",
+                    "scope": "keyword.control.ruby.block",
+                    "settings": {
+                        "foreground": "#C5E1A5",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+            // "textMateRules": [
+            //     {
+            //         "name": "Ruby Variables",
+            //         "scope": [
+            //             "variable.other.ruby",
+            //             "variable.other.readwrite.instance.ruby"
+            //         ],
+            //         "settings": {
+            //             "foreground": "#FFCC80", // Soft orange for variables
+            //             "fontStyle": "italic"
+            //         }
+            //     },
+            //     {
+            //         "name": "Ruby Strings",
+            //         "scope": [
+            //             "string.quoted.single.ruby",
+            //             "string.quoted.double.ruby"
+            //         ],
+            //         "settings": {
+            //             "foreground": "#B3E5FC", // Pastel blue for strings
+            //             "fontStyle": "italic"
+            //         }
+            //     },
+            //     {
+            //         "name": "Ruby Symbols",
+            //         "scope": "constant.other.symbol.ruby",
+            //         "settings": {
+            //             "foreground": "#C5E1A5", // Light green for symbols
+            //             "fontStyle": "bold"
+            //         }
+            //     },
+            //     {
+            //         "name": "Rails Keywords",
+            //         "scope": [
+            //             "keyword.control.ruby",
+            //             "keyword.other.special-method.ruby"
+            //         ],
+            //         "settings": {
+            //             "foreground": "#FFE082", // Pastel yellow for Rails keywords
+            //             "fontStyle": "bold"
+            //         }
+            //     },
+            //     {
+            //         "name": "Ruby Comments",
+            //         "scope": "comment.line.number-sign.ruby",
+            //         "settings": {
+            //             "foreground": "#D1C4E9", // Lavender for comments
+            //             "fontStyle": "italic"
+            //         }
+            //     },
+            //     {
+            //         "name": "Ruby Constants",
+            //         "scope": "constant.language.ruby",
+            //         "settings": {
+            //             "foreground": "#FFAB91", // Soft coral for constants
+            //             "fontStyle": "bold"
+            //         }
+            //     },
+            //     {
+            //         "name": "Rails ERB Tags",
+            //         "scope": "text.html.ruby meta.embedded.line.erb",
+            //         "settings": {
+            //             "foreground": "#FFCCBC", // Soft peach for ERB tags
+            //             "fontStyle": "italic"
+            //         }
+            //     },
+            //     {
+            //         "name": "Numbers",
+            //         "scope": "constant.numeric.ruby",
+            //         "settings": {
+            //             "foreground": "#B2EBF2", // Pastel cyan for numbers
+            //             "fontStyle": "bold"
+            //         }
+            //     },
+            //     {
+            //         "name": "Methods",
+            //         "scope": "entity.name.function.ruby",
+            //         "settings": {
+            //             "foreground": "#C8E6C9", // Soft mint green for method names
+            //             "fontStyle": "bold"
+            //         }
+            //     }
+            // ]
+        }
+    },
+    "background.editorBackgrounds": [],
+    "background.backgroundAlignment": [
+        "Center Center",
+        "Center Center",
+        "Center Center",
+        "Center Center"
+    ],
+    "background.backgroundBlur": [
+        "50",
+        "100",
+        "0",
+        "0"
+    ],
+    "background.backgroundOpacity": [
+        0.03,
+        0.06,
+        0.1,
+        0.1
+    ],
+    "background.backgroundSize": [
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "background.windowBackgrounds": [
+        "/home/despin/Downloads/00118a32-63c3-475a-8876-4f82093e5333.png"
+    ],
+    "background.backgroundRepeat": [
+        "No Repeat",
+        "No Repeat",
+        "No Repeat",
+        "No Repeat"
+    ],
+    "ruby.lint.reek": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "git.replaceTagsWhenPull": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.tools.terminal.autoApprove": {
+        "DEBUG_SCRAPER=1": true,
+        "result": true,
+        "puts": true,
+        "bundle": true
+    },
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "claudeCode.preferredLocation": "panel",
+    "github.copilot.selectedCompletionModel": ""
+}
